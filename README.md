@@ -8,6 +8,10 @@ An example (my resume) is available [here](//resume.powers.dev).
 
 You need [pdflatex](//linux.die.net/man/1/pdflatex) installed and on your path.
 
+`git clone git@github.com:powersdev/resume ~/resume`
+
+(If you clone elsewhere, update the config file accordingly)
+
 1. Copy the `.config` file to `~/.resume` and modify.
 2. Symlink the `bin/resume` binary to somewhere on your path.
 
