@@ -1,0 +1,313 @@
+\documentclass{article}
+
+\usepackage{multicol}
+\usepackage{changepage}
+\usepackage{parskip}
+\usepackage{geometry}
+\usepackage{hyperref}
+
+\geometry{legalpaper, portrait, margin=1in}
+
+\hypersetup{
+	pdfauthor={Jonathan Powers},
+	pdftitle={Resume - Jonathan Powers},
+	pdfsubject={Resume - Jonathan Powers},
+	pdfkeywords={resume,cv},
+}
+
+\newenvironment{narrow_list}{
+	\begin{itemize}
+		\setlength{\itemsep}{0pt}
+		\setlength{\parskip}{-1pt}
+		\setlength{\parsep}{0pt}
+	}{\end{itemize}
+}
+
+\let\OldRule\rule
+\renewcommand{\rule}[2]{\OldRule{\linewidth}{#2}}
+
+\begin{document}
+
+
+	% Header
+
+	\begin{multicols}{2}
+
+		\section*{Jonathan Powers}
+
+		Software Engineer
+
+		Full-Stack
+
+	\columnbreak
+
+		\vspace{3mm}
+
+		\setlength{\columnsep}{-4cm}
+
+		\begin{multicols}{2}
+
+			\textbf{Location:} 
+
+			\textbf{Email:} 
+
+			\textbf{Phone:} 
+
+		\columnbreak
+
+			Marlton, New Jersey
+
+			resume@powers.dev
+
+			856 296 6920
+		
+		\end{multicols}
+
+		\vspace{3mm}
+
+	\end{multicols}
+
+
+	% Work Experience Section
+
+	\subsection*{Work Experience}
+
+
+	\vspace{2mm}
+
+	\subsubsection*{YIKES, Inc. - Senior WordPress Developer}
+
+	\vspace{-1.5mm}
+
+	\textit{Dec 2020 - Current}
+
+	Planning and developing custom WordPress functionality
+
+	\begin{narrow_list}
+		\item Managing concurrent projects and setting client expectations
+		\item Integrations with various services via REST API
+		\item User Dashboards and membership features
+		\item Payment processing and general billing
+		\item Plugin and theme customizations and enhancements
+		\item Complicated front-end and back-end interactions
+		\item Architecture and performance optimizations
+		\item Custom plugin and Gutenberg block creation
+	\end{narrow_list}
+
+	Providing internal and external support for company plugins and general development 
+
+	\begin{narrow_list}
+		\item Providing training, guidance, and assistance to peers, clients, and interns
+		\item Answering questions and providing code examples in the WordPress support forums
+		\item Answering high priority support tickets for premium plugins and add-ons
+	\end{narrow_list}
+
+	Creating and supporting local DevOps environment
+
+	\begin{narrow_list}
+		\item Lando for local PHP, NGINX, Mariadb, PhpMyAdmin, and Mailhog
+		\item Including PHP Codesniffer, PHPUnit, and build tooling configurations
+		\item Support for VIP custom filesystem and code quality (phpcs) requirements
+		\item Python and Bash scripts to automate setup of new sites and synchronize with production
+	\end{narrow_list}
+
+
+	\vspace{2mm}
+
+	\subsubsection*{AudiologyDesign - Lead Web Developer, Full Stack}
+
+	\vspace{-1.5mm}
+
+	\textit{May 2020 - Dec 2020}
+
+	Subject Matter Expert for WordPress platform
+
+	\begin{narrow_list}
+		\item Build and launch client websites (Sass, HTML5, ES6, Alpine.js, Tailwind)
+		\item Custom theme boilerplate to expedite site creation (Roots Sage)
+		\item Use of Git, GitHub, Chef, Jenkins, AWS Fargate to manage deployments
+	\end{narrow_list}
+
+	Creating and supporting local DevOps environment
+
+	\begin{narrow_list}
+		\item Lando for local PHP, NGINX, Mariadb, and Mailhog
+		\item Webpack/Gulp/Laravel Mix for bundling and task running
+		\item Bash scripts for importing content from production
+	\end{narrow_list}
+
+
+	\vspace{2mm}
+
+	\subsubsection*{1SEO Digital Agency - Lead Web Developer, Full Stack}
+
+	\vspace{-1.5mm}
+
+	\textit{Apr 2019 - May 2020}
+
+	Building and launching several modern, responsive websites
+
+	\begin{narrow_list}
+		\item Node.js, Express, Typescript, Styled Components, Styled System, Rebass, Formik, Redux, and PouchDB
+		\item Next.js Server-Side Rendering necessary for good SEO performance
+		\item Created a boilerplate including schema, utility components, and API routes
+		\item Utilized serverless hosting for the Global CDN and quick API scaffolding
+		\item Constructed custom CMS dashboards using Sanity
+		\item Custom email functionality using API-based transactional email service
+	\end{narrow_list}
+
+	Managing development projects in an agile environment for 100+ clients
+
+	\begin{narrow_list}
+		\item Collaborating to create holistic plan to address the client’s needs
+		\item Project kickoff meetings and assessment of client's online goals
+		\item Direct client support and training over the phone or via web conferencing
+	\end{narrow_list}
+
+	Leading a small team of developers
+
+	\begin{narrow_list}
+		\item Training and mentoring my coworkers, both inside and outside of work
+		\item Monthly meetup with team to discuss new tech and explore ideas for growth
+		\item Routine code reviews, internal QA, and other collaborative efforts
+	\end{narrow_list}
+
+	Performing IT, maintenance, and troubleshooting tasks
+
+	\begin{narrow_list}
+		\item Adding / Editing Nameservers, DNS Records, and SSL Certificates
+		\item Fixing broken site functionality and performing triage on compromised sites
+		\item Provisioning servers and performing site migrations
+		\item Worked in a variety of environments, including Wordpress, Joomla, Magento, Wix, Squarespace, and a variety of custom Content Management Systems
+	\end{narrow_list}
+
+	
+	% Projects Section
+
+	\vspace{3mm}
+
+	\subsection*{Notable Projects}
+
+	\vspace{0mm}
+
+	\setlength{\columnsep}{1cm}
+
+	\begin{multicols}{2}
+		\textbf{Sporked} - 2022
+
+		\textit{sporked.com}
+
+		Membership functionality, custom Gutenberg blocks, general theme development
+
+	\vspace{2mm}
+
+		\textbf{Bosgraaf Homes} - 2020
+
+		\textit{bosgraaf.com}
+			
+		Complicated search and filtering of homes using Alpine.js and Mapbox
+
+	\columnbreak
+
+		\textbf{The Hollywood Reporter} - 2021
+
+		\textit{hollywoodreporter.com}
+
+		Theme development, data fetching, complex front-end interactions
+
+	\vspace{2mm}
+
+		\textbf{EGHome} - 2020
+
+		\textit{eghome.net}
+
+		Custom Zillow API Feed in PHP, returning an XML document of home and community information
+
+	\end{multicols}
+
+
+	% Education Section
+
+	\vspace{0mm}
+
+	\subsection*{Education}
+
+	\vspace{2mm}
+
+	\textbf{Camden County College} - Blackwood, NJ
+
+	Associate of Science in Computer Science  
+	Class of 2016
+
+
+	% Skills Section
+
+	\vspace{3mm}
+
+	\subsection*{Skills}
+
+	\vspace{2mm}
+
+	\setlength{\columnsep}{-4.5in}
+
+	\begin{multicols}{2}
+
+		\textbf{PHP}
+		\vspace{-1mm}
+
+		\textbf{JavaScript}
+		\vspace{-1mm}
+
+		\textbf{Database}
+		\vspace{-1mm}
+
+		\textbf{CSS}
+		\vspace{-1mm}
+
+		\textbf{Scripting}
+		\vspace{-1mm}
+
+		\textbf{OS}
+		\vspace{-1mm}
+
+		\textbf{DevOps}
+		\vspace{-1mm}
+
+		\textbf{Tooling}
+		\vspace{-1mm}
+
+		\textbf{Hosting}
+		\vspace{-1mm}
+
+	\columnbreak
+
+		WordPress, Laravel, PHP 8, Object-Oriented
+		\vspace{-1mm}
+
+		ESNext, React, Next.js, Alpine.js, jQuery
+		\vspace{-1mm}
+
+		SQL (mysql, mariadb), NOSQL (mongo, firebase, pouchdb)
+		\vspace{-1mm}
+
+		SASS, Styled-Components, Styled-JSX
+		\vspace{-1mm}
+
+		Bash/Zsh, Node.js, Python
+		\vspace{-1mm}
+
+		Linux (debian-based, arch-based), MacOS, and Windows
+		\vspace{-1mm}
+
+		Containers (docker, lando), Virtual Machines (virtualbox, vagrant, homestead)
+		\vspace{-1mm}
+
+		Composer, NPM, Yarn, Webpack, Parcel, Grunt, Gulp
+		\vspace{-1mm}
+
+		DigitalOcean, AWS, WPEngine, WPVIP
+		\vspace{-1mm}
+
+	\end{multicols}
+
+\end{document}

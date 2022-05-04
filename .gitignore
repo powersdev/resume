@@ -1,0 +1,4 @@
+# Log files
+*.aux
+*.log
+*.out

@@ -1,0 +1,46 @@
+#!/bin/bash
+
+#
+# Work on Resume
+#
+# Symlink this to your PATH.
+#
+
+if [[ -f "$HOME/.resume" ]]
+then
+	source $HOME/.resume
+fi
+
+helptext="""
+Usage: resume [command]
+
+  help     Shows this help menu
+  edit     Opens the resume file in editor of choice. 
+  build    Runs pdflatex using your configuration variables.
+  view     Runs xdg-open on the built PDF file.
+  config   Opens the configuration file in editor of choice.
+"""
+
+
+case $1 in
+	"build")
+		pdflatex -output-directory="$resume_dir/dist" \
+			-aux-directory="$resume_dir/logs" \
+			-jobname="$resume_template" \
+			"$resume_dir/src/$resume_source"
+		;;
+	"view")
+		$resume_viewer $resume_dir/dist/$resume_template
+		;;
+	"config")
+		$resume_editor $HOME/.resume
+		;;
+	"edit")
+		$resume_editor $resume_dir/src/$resume_source
+		;;
+	"help")
+		echo "$helptext"
+		;;
+	*)
+		echo -e "Enter a command.\n$helptext"
+esac
