@@ -2,6 +2,8 @@
 
 Just some simple scripts for generating a pdf resume from a latex file.
 
+An example (my resume) is available [here](//resume.powers.dev).
+
 ## Quickstart
 
 You need [pdflatex](//linux.die.net/man/1/pdflatex) installed and on your path.
