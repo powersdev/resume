@@ -11,6 +11,8 @@ You need [pdflatex](//linux.die.net/man/1/pdflatex) installed and on your path.
 1. Copy the `.config` file to `~/.resume` and modify.
 2. Symlink the `bin/resume` binary to somewhere on your path.
 
+This project uses [lefthook](//github.com/evilmartians/lefthook) to build the PDF as a pre-commit hook to ensure you always commit the latest copy.
+
 ## Command Usage
 
 ```
