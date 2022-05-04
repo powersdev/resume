@@ -1,6 +1,6 @@
-# Resume Generation
+# Version-Controlled Resume
 
-Just some simple scripts for generating and managing a version-controlled resume.
+Just some simple scripts for generating a pdf resume from a latex file.
 
 ## Quickstart
 
