@@ -38,6 +38,9 @@ case $1 in
 	"edit")
 		$resume_editor $resume_dir/src/$resume_source
 		;;
+	"save")
+		resume build && cd $resume_dir && git commit -am "edit resume" && git push
+		;;
 	"help")
 		echo "$helptext"
 		;;
