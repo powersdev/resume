@@ -31,7 +31,7 @@ case $1 in
 			"$resume_dir/src/$resume_source"
 		;;
 	"view")
-		$resume_viewer $resume_dir/dist/$resume_template
+		$resume_viewer $resume_dir/dist/$resume_template.pdf
 		;;
 	"config")
 		$resume_editor $HOME/.resume
