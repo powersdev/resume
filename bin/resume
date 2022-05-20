@@ -18,6 +18,7 @@ Usage: resume [command]
   edit     Opens the resume file in editor of choice. 
   build    Runs pdflatex using your configuration variables.
   view     Runs xdg-open on the built PDF file.
+  save     Build, commit, and push your resume.
   config   Opens the configuration file in editor of choice.
 """
 
